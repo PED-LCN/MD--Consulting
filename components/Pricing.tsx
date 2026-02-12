@@ -1,26 +1,49 @@
-
-import React from 'react';
+import React from "react";
 
 const CheckIcon = () => (
-  <svg className="w-5 h-5 text-green-500" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
-    <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
+  <svg
+    className="w-5 h-5 text-green-500 shrink-0"
+    xmlns="http://www.w3.org/2000/svg"
+    viewBox="0 0 20 20"
+    fill="currentColor"
+  >
+    <path
+      fillRule="evenodd"
+      d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+      clipRule="evenodd"
+    />
   </svg>
 );
 
-const PricingCard = ({ plan, price, features, popular = false }: { plan: string, price: string, features: string[], popular?: boolean }) => {
+const PricingCard = ({
+  plan,
+  price,
+  features,
+  popular = false,
+}: {
+  plan: string;
+  price: string;
+  features: string[];
+  popular?: boolean;
+}) => {
   const whatsappMessage = `Ol%C3%A1!%20Tenho%20interesse%20no%20plano%20${plan}%20da%20consultoria%20de%20ingl%C3%AAs.`;
   const whatsappLink = `https://wa.me/5511999999999?text=${whatsappMessage}`;
 
   return (
-    <div className={`border rounded-xl p-8 flex flex-col h-full ${popular ? 'border-blue-900 border-2 relative' : 'border-gray-200'}`}>
+    <div
+      className={`border rounded-xl p-8 flex flex-col h-full ${popular ? "border-blue-900 border-2 relative" : "border-gray-200"}`}
+    >
       {popular && (
         <div className="absolute top-0 -translate-y-1/2 left-1/2 -translate-x-1/2 bg-blue-900 text-white text-xs font-bold px-4 py-1 rounded-full uppercase">
-          Most Popular
+          Recomendado
         </div>
       )}
       <h3 className="text-2xl font-semibold text-blue-900 mb-2">{plan}</h3>
-      <p className="text-4xl font-bold text-blue-900 mb-6">{price}<span className="text-lg font-normal text-gray-500">/mo</span></p>
-      <ul className="space-y-4 mb-8 flex-grow">
+      <p className="text-4xl font-bold text-blue-900 mb-6">
+        {price}
+        <span className="text-lg font-normal text-gray-500">/mês</span>
+      </p>
+      <ul className="space-y-4 mb-8 grow">
         {features.map((feature, index) => (
           <li key={index} className="flex items-start">
             <CheckIcon />
@@ -28,14 +51,17 @@ const PricingCard = ({ plan, price, features, popular = false }: { plan: string,
           </li>
         ))}
       </ul>
-      <a href={whatsappLink}
+      <a
+        href={whatsappLink}
         target="_blank"
         rel="noopener noreferrer"
         className={`w-full text-center font-bold py-3 px-6 rounded-full transition-transform duration-300 hover:scale-105 ${
-          popular ? 'bg-yellow-400 text-blue-900 hover:bg-yellow-500' : 'bg-blue-100 text-blue-900 hover:bg-blue-200'
+          popular
+            ? "bg-yellow-400 text-blue-900 hover:bg-yellow-500"
+            : "bg-blue-100 text-blue-900 hover:bg-blue-200"
         }`}
       >
-        Choose Plan
+        Escolha o plano
       </a>
     </div>
   );
@@ -46,43 +72,42 @@ const Pricing: React.FC = () => {
     <section id="pricing" className="py-20 md:py-28 bg-white">
       <div className="container mx-auto px-6">
         <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-4xl font-bold text-blue-900 mb-4">Find the Right Plan for You</h2>
+          <h2 className="text-3xl md:text-4xl font-bold text-blue-900 mb-4">
+            Encotre o plano certo pra você.
+          </h2>
           <p className="max-w-2xl mx-auto text-gray-600 text-lg">
-            Invest in your fluency with our flexible and affordable consultancy plans.
+            Invista na sua fluência com nossos planos de consultoria flexíveis.
           </p>
         </div>
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-5xl mx-auto">
           <PricingCard
-            plan="Starter"
-            price="$49"
+            plan="Coaching Executivo"
+            price="R$ 1.000"
             features={[
-              "4 sessions per month",
-              "30 minutes per session",
-              "Personalized topics",
-              "Basic feedback reports"
+              "2 horas semanais",
+              "Coaching bussiness English",
+              "Reuniões, Apresentações",
+              "Networking",
             ]}
           />
           <PricingCard
-            plan="Pro"
-            price="$89"
+            plan="Global Business Partner"
+            price="R$2.500"
             features={[
-              "8 sessions per month",
-              "45 minutes per session",
-              "Personalized topics",
-              "Detailed feedback reports",
-              "Priority scheduling"
+              "4 horas semanais",
+              "Revisão de até 5 e-mails ou documentos profissionais por semana",
+              "Prioridade no agendamento para chamadas de negócios urgentes",
             ]}
             popular={true}
           />
           <PricingCard
-            plan="Intensive"
-            price="$149"
+            plan="Suporte Concierge Completo"
+            price="R$5.000"
             features={[
-              "16 sessions per month",
-              "45 minutes per session",
-              "Customized curriculum",
-              "In-depth progress tracking",
-              "Interview & presentation prep"
+              "Suporte integral",
+              " interpretação presencial ou virtual em reuniões internacionais",
+              "tradução técnica de documentos",
+              "Até 10 horas de suporte dedicado por mês",
             ]}
           />
         </div>
