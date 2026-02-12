@@ -1,10 +1,12 @@
 
 import React from 'react';
+import connection from './icons/connection.JPEG';
+
 
 const Hero: React.FC = () => {
   return (
     <section id="hero" className="relative h-screen flex items-center justify-center text-center text-white">
-      <div className="absolute inset-0 bg-cover bg-center bg-no-repeat" style={{ backgroundImage: "url('https://picsum.photos/1920/1080?random=1')" }}></div>
+      <div className="absolute inset-0 bg-cover bg-center bg-no-repeat" style={{ backgroundImage: `url('${connection}')` }}></div>
       <div className="absolute inset-0 bg-blue-900 opacity-70"></div>
       <div className="relative z-10 px-6">
         <h1 className="text-4xl md:text-6xl font-extrabold mb-4 leading-tight animate-fade-in-down">
