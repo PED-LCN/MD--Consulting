@@ -1,6 +1,5 @@
-
-import React from 'react';
-import { USAFlagIcon, BrazilFlagIcon } from './icons/Flags';
+import React from "react";
+import { USAFlagIcon, BrazilFlagIcon } from "./icons/Flags";
 
 const Footer: React.FC = () => {
   return (
@@ -11,7 +10,9 @@ const Footer: React.FC = () => {
           <span className="text-xl font-bold text-blue-900">MD Consulting</span>
           <BrazilFlagIcon className="h-5 w-5" />
         </div>
-        <p>&copy; {new Date().getFullYear()} SpeakUp. All rights reserved.</p>
+        <p>
+          &copy; {new Date().getFullYear()} MD consulting. All rights reserved.
+        </p>
         <p className="text-sm">Bridging Cultures Through Conversation.</p>
       </div>
     </footer>

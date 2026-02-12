@@ -27,11 +27,13 @@ const PricingCard = ({
   popular?: boolean;
 }) => {
   const whatsappMessage = `Ol%C3%A1!%20Tenho%20interesse%20no%20plano%20${plan}%20da%20consultoria%20de%20ingl%C3%AAs.`;
-  const whatsappLink = `https://wa.me/5511999999999?text=${whatsappMessage}`;
+  const whatsappLink = `https://wa.me/5598182099179?text=${whatsappMessage}`;
 
   return (
     <div
-      className={`border rounded-xl p-8 flex flex-col h-full ${popular ? "border-blue-900 border-2 relative" : "border-gray-200"}`}
+      className={`border rounded-xl p-8 flex flex-col h-full ${
+        popular ? "border-blue-900 border-2 relative" : "border-gray-200"
+      }`}
     >
       {popular && (
         <div className="absolute top-0 -translate-y-1/2 left-1/2 -translate-x-1/2 bg-blue-900 text-white text-xs font-bold px-4 py-1 rounded-full uppercase">

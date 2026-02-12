@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { USAFlagIcon, BrazilFlagIcon } from "./icons/Flags";
+import logo from "./icons/logo.jpeg";
 
 const Header: React.FC = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -42,13 +42,13 @@ const Header: React.FC = () => {
           onClick={(e) => handleLinkClick(e, "#hero")}
           className="flex items-center space-x-2"
         >
+          <div
+            className="flex items-center space-x-1 w-12 h-12 bg-cover bg-center opacity-80 "
+            style={{ backgroundImage: `url(${logo})` }}
+          ></div>
           <span className="text-2xl font-bold text-blue-100">
             MD consulting
           </span>
-          <div className="flex items-center space-x-1">
-            <USAFlagIcon className="h-5 w-5" />
-            <BrazilFlagIcon className="h-5 w-5" />
-          </div>
         </a>
         <nav className="hidden md:flex items-center space-x-8">
           {navLinks.map((link) => (
@@ -56,15 +56,15 @@ const Header: React.FC = () => {
               key={link.href}
               href={link.href}
               onClick={(e) => handleLinkClick(e, link.href)}
-              className="text-blue-1000 bg-blue-100 shadow-[0_0_25px_rgba(59,130,246,0.6)] rounded-full py-1 px-4
-              hover:text-blue-900 font-medium transition-colors transition-transform duration-200 hover:scale-105"
+              className="text-blue-900 bg-blue-100 shadow-[0_0_25px_rgba(59,130,246,0.6)] rounded-full py-1 px-4
+              hover:text-blue-900 font-medium  transition-transform duration-200 hover:scale-105"
             >
               {link.label}
             </a>
           ))}
         </nav>
         <a
-          href="https://wa.me/5511999999999?text=Ol%C3%A1!%20Tenho%20interesse%20na%20consultoria%20de%20ingl%C3%AAs."
+          href="https://wa.me/5598182099179?text=Ol%C3%A1!%20Tenho%20interesse%20na%20consultoria%20de%20ingl%C3%AAs."
           target="_blank"
           rel="noopener noreferrer"
           className="hidden md:inline-block bg-blue-100 text-blue-900 shadow-[0_0_25px_rgba(59,130,246,0.6)] hover:text-blue-900 font-bold py-2 px-6 rounded-full transition-transform duration-300 hover:scale-105 "
@@ -126,7 +126,7 @@ const Header: React.FC = () => {
             </a>
           ))}
           <a
-            href="https://wa.me/5511999999999?text=Ol%C3%A1!%20Tenho%20interesse%20na%20consultoria%20de%20ingl%C3%AAs."
+            href="https://wa.me/5598182099179?text=Ol%C3%A1!%20Tenho%20interesse%20na%20consultoria%20de%20ingl%C3%AAs."
             target="_blank"
             rel="noopener noreferrer"
             className="bg-yellow-400 hover:bg-yellow-500 text-blue-900 font-bold py-3 px-8 rounded-full transition-transform duration-300 hover:scale-105"
