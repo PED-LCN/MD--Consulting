@@ -9,6 +9,9 @@ const Contact: React.FC = () => {
           Ready to begin your English journey?
         </h2>
         <p className="max-w-2xl mx-auto text-blue-200 text-lg mb-10">
+          Sua jornada para uma comunicação confiante em inglês está a apenas um
+          clique de distância. Junte-se a MD Consulting hoje mesmo e descubra
+          uma nova maneira de aprender.
           Sua jornada para uma comunicação confiante em inglês está a apenas um clique de distância. Junte-se a MD Consulting hoje mesmo e descubra uma nova maneira de aprender.
         </p>
         <a
