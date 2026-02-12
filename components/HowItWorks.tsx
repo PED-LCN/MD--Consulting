@@ -55,7 +55,7 @@ const HowItWorks: React.FC = () => {
                 O pagamento é mensal e pode ser feito de forma prática via Pix ou transferência bancária. A confirmação garante a sua vaga e a continuidade das sessões.
             </Step>
             <Step icon={<VideoIcon className="w-12 h-12 text-blue-900" />} title="4. Comece a Praticar!">
-                Tudo pronto! No dia e hora marcados, acesse o link da videochamada e comece a praticar. Prepare-se para destravar seu inglês com conversas reais e dinâmicas.
+                Tudo pronto! No dia e hora marcados, acesse o link da videochamada e comece a sua consultoria.
             </Step>
         </div>
 
