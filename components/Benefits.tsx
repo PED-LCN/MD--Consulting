@@ -32,7 +32,7 @@ const Benefits: React.FC = () => {
           </h2>
           <p className="max-w-3xl mx-auto text-gray-600 text-lg">
             Nossa consultoria é projetada para oferecer resultados tangíveis que
-            aumentam tanto suas habilidades quanto sua confiança.
+            impulsionam o seu negócio.
           </p>
         </div>
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
@@ -41,8 +41,9 @@ const Benefits: React.FC = () => {
             icon={<ConfidenceIcon className="h-12 w-12 text-green-500" />}
             title="Construa Confiança Real"
           >
-            aprimore sua fala em público. Nosso ambiente acolhedor ajuda você a
-            praticar livremente e a se sentir à vontade para cometer erros.
+            comunicação é a chave em negociações ,posso te ajudar com isso de
+            forma efetiva, sem duplas interpretações no inglês e de forma
+            profissional.
           </BenefitCard>
           {/* FIX: Passed text content as children to the BenefitCard component. */}
           <BenefitCard
