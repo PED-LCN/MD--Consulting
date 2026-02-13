@@ -131,7 +131,7 @@ const Header: React.FC = () => {
             rel="noopener noreferrer"
             className="bg-yellow-400 hover:bg-yellow-500 text-blue-900 font-bold py-3 px-8 rounded-full transition-transform duration-300 hover:scale-105"
           >
-            Get Started
+            Começar agora
           </a>
         </nav>
       </div>
