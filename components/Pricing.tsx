@@ -27,7 +27,7 @@ const PricingCard = ({
   popular?: boolean;
 }) => {
   const whatsappMessage = `Ol%C3%A1!%20Tenho%20interesse%20no%20plano%20${plan}%20da%20consultoria%20de%20ingl%C3%AAs.`;
-  const whatsappLink = `https://wa.me/5598182099179?text=${whatsappMessage}`;
+  const whatsappLink = `https://wa.me/5581982099179?text=${whatsappMessage}`;
 
   return (
     <div

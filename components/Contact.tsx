@@ -13,7 +13,7 @@ const Contact: React.FC = () => {
           uma nova maneira de aprender.
         </p>
         <a
-          href="https://wa.me/5598182099179?text=Ol%C3%A1!%20Tenho%20interesse%20em%20iniciar%20a%20consultoria%20de%20ingl%C3%AAs."
+          href="https://wa.me/5581982099179?text=Ol%C3%A1!%20Tenho%20interesse%20em%20iniciar%20a%20consultoria%20de%20ingl%C3%AAs."
           target="_blank"
           rel="noopener noreferrer"
           className="inline-block bg-yellow-400 hover:bg-yellow-500 text-blue-900 font-bold py-4 px-12 rounded-full text-lg transition-transform duration-300 hover:scale-110"

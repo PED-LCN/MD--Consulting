@@ -23,7 +23,7 @@ const Header: React.FC = () => {
 
   const handleLinkClick = (
     e: React.MouseEvent<HTMLAnchorElement, MouseEvent>,
-    href: string,
+    href: string
   ) => {
     e.preventDefault();
     document.querySelector(href)?.scrollIntoView({ behavior: "smooth" });
@@ -49,7 +49,11 @@ const Header: React.FC = () => {
             style={{ backgroundImage: `url(${logo})` }}
           ></div>
           <span
-            className={`text-2xl font-bold ${isScrolled || isMenuOpen ? "text-blue-900 md:text-blue-100" : "text-blue-100"}`}
+            className={`text-2xl font-bold ${
+              isScrolled || isMenuOpen
+                ? "text-blue-900 md:text-blue-100"
+                : "text-blue-100"
+            }`}
           >
             MD consulting
           </span>
@@ -68,7 +72,7 @@ const Header: React.FC = () => {
           ))}
         </nav>
         <a
-          href="https://wa.me/5598182099179?text=Ol%C3%A1!%20Tenho%20interesse%20na%20consultoria%20de%20ingl%C3%AAs."
+          href="https://wa.me/5581982099179?text=Ol%C3%A1!%20Tenho%20interesse%20na%20consultoria%20de%20ingl%C3%AAs."
           target="_blank"
           rel="noopener noreferrer"
           className="hidden md:inline-block bg-yellow-400 text-blue-900 shadow-[0_0_25px_rgba(59,130,246,0.6)] hover:text-blue-900 font-bold py-2 px-6 rounded-full transition-transform duration-300 hover:scale-105 "
@@ -76,7 +80,9 @@ const Header: React.FC = () => {
           Começar agora
         </a>
         <button
-          className={`md:hidden z-50 ${isScrolled || isMenuOpen ? "text-white-900" : "text-blue-100"}`}
+          className={`md:hidden z-50 ${
+            isScrolled || isMenuOpen ? "text-white-900" : "text-blue-100"
+          }`}
           onClick={() => setIsMenuOpen(!isMenuOpen)}
         >
           {isMenuOpen ? (
@@ -132,7 +138,7 @@ const Header: React.FC = () => {
             </a>
           ))}
           <a
-            href="https://wa.me/5598182099179?text=Ol%C3%A1!%20Tenho%20interesse%20na%20consultoria%20de%20ingl%C3%AAs."
+            href="https://wa.me/5581982099179?text=Ol%C3%A1!%20Tenho%20interesse%20na%20consultoria%20de%20ingl%C3%AAs."
             target="_blank"
             rel="noopener noreferrer"
             className="bg-yellow-400 hover:bg-yellow-500 text-blue-900 font-bold py-3 px-8 rounded-full transition-transform duration-300 hover:scale-105"

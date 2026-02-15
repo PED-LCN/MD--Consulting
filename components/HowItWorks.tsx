@@ -73,7 +73,7 @@ const HowItWorks: React.FC = () => {
               seus objetivos, nível de inglês e encontrar o plano de consultoria
               ideal para você.
               <a
-                href="https://wa.me/5598182099179?text=Ol%C3%A1!%20Tenho%20interesse%20na%20consultoria%20de%20ingl%C3%AAs."
+                href="https://wa.me/5581982099179?text=Ol%C3%A1!%20Tenho%20interesse%20na%20consultoria%20de%20ingl%C3%AAs."
                 target="_blank"
                 rel="noopener noreferrer"
                 className="mt-4 inline-flex items-center bg-green-500 hover:bg-green-600 text-white font-bold py-2 px-6 rounded-full transition-colors"

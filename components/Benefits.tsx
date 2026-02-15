@@ -56,10 +56,11 @@ const Benefits: React.FC = () => {
           {/* FIX: Passed text content as children to the BenefitCard component. */}
           <BenefitCard
             icon={<FeedbackIcon className="h-12 w-12 text-yellow-500" />}
-            title="Feedback Instantâneo"
+            title="Tradução de documentos"
           >
-            Receba correções imediatas e construtivas sobre pronúncia, gramática
-            e vocabulário diretamente do seu consultor.
+            Tradução de documentos e e-mails escritos em inglês para negociações
+            internacionais. Assine o serviço e não tenha dificuldades com o
+            inglês técnico.
           </BenefitCard>
           {/* FIX: Passed text content as children to the BenefitCard component. */}
           <BenefitCard

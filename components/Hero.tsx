@@ -28,10 +28,10 @@ const Hero: React.FC = () => {
           mundo empresarial.
         </p>
         <a
-          href="https://wa.me/5598182099179?text=Ol%C3%A1!%20Tenho%20interesse%20na%20consultoria%20de%20ingl%C3%AAs."
+          href="https://wa.me/5581982099179?text=Ol%C3%A1!%20Tenho%20interesse%20na%20consultoria%20de%20ingl%C3%AAs."
           target="_blank"
           rel="noopener noreferrer"
-          className="inline-block text-blue-900 bg-blue-300 shadow-[0_0_25px_rgba(59,130,246,0.6)] rounded-full py-3 px-10
+          className="inline-block font-black text-blue-900 bg-blue-300 shadow-[0_0_25px_rgba(59,130,246,0.6)] rounded-full py-3 px-10
  font-medium transition-all duration-200 hover:scale-105"
         >
           Falar com o consultor no WhatsApp
