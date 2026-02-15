@@ -14,7 +14,7 @@ const Hero: React.FC = () => {
       <div className="absolute inset-0 bg-blue-900 opacity-70"></div>
       <div className="relative z-10 px-6">
         <h1 className="text-4xl md:text-6xl font-extrabold mb-4 leading-tight animate-fade-in-down">
-          Destrave seu bussiness english.
+          Destrave seu Business English.
           <br />
           <span className="text-blue-300">
             Aprenda a se comunicar em inglês com um nativo.
@@ -31,8 +31,7 @@ const Hero: React.FC = () => {
           href="https://wa.me/5581982099179?text=Ol%C3%A1!%20Tenho%20interesse%20na%20consultoria%20de%20ingl%C3%AAs."
           target="_blank"
           rel="noopener noreferrer"
-          className="inline-block font-black text-blue-900 bg-blue-300 shadow-[0_0_25px_rgba(59,130,246,0.6)] rounded-full py-3 px-10
- font-medium transition-all duration-200 hover:scale-105"
+          className="inline-block font-black text-blue-900 bg-blue-300 shadow-[0_0_25px_rgba(59,130,246,0.6)] rounded-full py-3 px-10 transition-all duration-200 hover:scale-105"
         >
           Falar com o consultor no WhatsApp
         </a>

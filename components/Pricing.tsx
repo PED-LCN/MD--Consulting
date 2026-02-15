@@ -75,7 +75,7 @@ const Pricing: React.FC = () => {
       <div className="container mx-auto px-6">
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-bold text-blue-900 mb-4">
-            Encotre o plano certo pra você.
+            Encontre o plano certo para você.
           </h2>
           <p className="max-w-2xl mx-auto text-gray-600 text-lg">
             Invista na sua fluência com nossos planos de consultoria flexíveis.
@@ -87,7 +87,7 @@ const Pricing: React.FC = () => {
             price="R$ 1.000"
             features={[
               "2 horas semanais",
-              "Coaching bussiness English",
+              "Coaching Business English",
               "Reuniões, Apresentações",
               "Networking",
             ]}

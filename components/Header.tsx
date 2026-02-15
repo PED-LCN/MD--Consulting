@@ -23,7 +23,7 @@ const Header: React.FC = () => {
 
   const handleLinkClick = (
     e: React.MouseEvent<HTMLAnchorElement, MouseEvent>,
-    href: string
+    href: string,
   ) => {
     e.preventDefault();
     document.querySelector(href)?.scrollIntoView({ behavior: "smooth" });
@@ -55,7 +55,7 @@ const Header: React.FC = () => {
                 : "text-blue-100"
             }`}
           >
-            MD consulting
+            MD Consulting
           </span>
         </a>
         <nav className="hidden md:flex items-center space-x-8">
