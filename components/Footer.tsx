@@ -11,7 +11,7 @@ const Footer: React.FC = () => {
           <BrazilFlagIcon className="h-5 w-5" />
         </div>
         <p>
-          &copy; {new Date().getFullYear()} MD consulting. All rights reserved.
+          &copy; {new Date().getFullYear()} MD Consulting. All rights reserved.
         </p>
         <p className="text-sm">Bridging Cultures Through Conversation.</p>
       </div>

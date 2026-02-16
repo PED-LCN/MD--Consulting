@@ -15,7 +15,7 @@ const BenefitCard = ({
   title: string;
   children: React.ReactNode;
 }) => (
-  <div className="bg-white p-8 rounded-xl shadow-lg hover:shadow-[0_0_25px_rgba(59,130,246,0.6)] hover:shadow-2xl hover:-translate-y-2 transition-all duration-300">
+  <div className="bg-white p-8 rounded-xl shadow-lg hover:shadow-[0_0_25px_rgba(59,130,246,0.6)] hover:-translate-y-2 transition-all duration-300">
     <div className="mb-4">{icon}</div>
     <h3 className="text-xl font-bold text-blue-900 mb-3">{title}</h3>
     <p className="text-gray-600">{children}</p>
@@ -41,7 +41,7 @@ const Benefits: React.FC = () => {
             icon={<ConfidenceIcon className="h-12 w-12 text-green-500" />}
             title="Construa Confiança Real"
           >
-            comunicação é a chave em negociações ,posso te ajudar com isso de
+            A comunicação é a chave em negociações. Posso ajudá-lo com isso de
             forma efetiva, sem duplas interpretações no inglês e de forma
             profissional.
           </BenefitCard>

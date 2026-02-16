@@ -45,7 +45,7 @@ const Faq: React.FC = () => {
     {
       question: "Quem será seu instrutor de Inglês?",
       answer:
-        "Nosso Instrutor é falante de inglês nativo, residente no Brasil. Entendendo as suas dificuldades e as exigências do mercado internacional, fornecerá tudo o que você precisa para aprimorar suas habilidades.",
+        "Nosso instrutor é um falante nativo de inglês que reside no Brasil. Por entender as suas dificuldades e as exigências do mercado internacional, ele fornecerá tudo o que você precisa para aprimorar suas habilidades.",
     },
     {
       question: "E se eu precisar remarcar uma sessão?",
@@ -53,9 +53,8 @@ const Faq: React.FC = () => {
         "Entendemos que imprevistos acontecem! Você pode remarcar qualquer sessão até 24 horas antes, entrando em contato com o instrutor via WhatsApp.",
     },
     {
-      question: "Este produto é adequado para iniciantes ?",
-      answer:
-        "........",
+      question: "Este produto é adequado para iniciantes?",
+      answer: "Sim! Nossos planos são projetados para atender a todos os níveis de proficiência, desde iniciantes até avançados. O instrutor personalizará as sessões de acordo com suas necessidades e objetivos específicos.",
     },
     {
       question: "Que tecnologia eu preciso para as sessões online?",
