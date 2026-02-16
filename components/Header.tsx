@@ -44,29 +44,13 @@ const Header: React.FC = () => {
           onClick={(e) => handleLinkClick(e, "#hero")}
           className="flex items-center space-x-2 relative z-50"
         >
-<<<<<<< HEAD
-          <div className="flex items-center space-x-1 w-auto h-auto bg-cover bg-center opacity-80">
+          <div className="flex items-center space-x-1 w-auto h-auto bg-cover bg-center opacity-80 ">
             <img
               src={logo}
               alt="Logo Longa"
-              className="h-10 md:h-16 object-contain"
+              className="h-10 md:h-16 object-contain rounded"
             />
           </div>
-=======
-          <div
-            className="flex items-center space-x-1 w-12 h-12 bg-cover bg-center opacity-80"
-            style={{ backgroundImage: `url(${logo})` }}
-          ></div>
-          <span
-            className={`text-2xl font-bold ${
-              isScrolled || isMenuOpen
-                ? "text-blue-900 md:text-blue-100"
-                : "text-blue-100"
-            }`}
-          >
-            MD Consulting
-          </span>
->>>>>>> 0eec0f87f3c3ea7f986d30ac28bc0500289b45bf
         </a>
         <nav className="hidden md:flex items-center space-x-8">
           {navLinks.map((link) => (
